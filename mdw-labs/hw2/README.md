@@ -6,6 +6,6 @@
 
 In the screenshot below you can observe the attempt to connect via telnet and make the **GET** request with the needed parameters
 
-![alt text]("http://i.imgur.com/AVKqgJN.png")
+![alt text](http://i.imgur.com/AVKqgJN.png)
 
 
