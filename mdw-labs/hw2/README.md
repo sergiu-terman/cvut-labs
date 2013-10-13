@@ -20,4 +20,36 @@ In the screenshot below you can observe the attempt to connect via telnet and ma
 ##CURL
 - - - -
 
+#####Your next page is /protocol/welcome
+
+**Screenshot nr. 1**
+
+![alt text](http://i.imgur.com/9i8iOcU.png)
+
+**Screenshot nr. 2**
+
+![alt text](http://i.imgur.com/iOIEkeN.png)
+
+**Screenshot nr. 3**
+
+![alt text](http://i.imgur.com/txYqMCN.png)
+
+**Screenshot nr. 4**
+
+![alt text](http://i.imgur.com/1Y90w86.png)
+
+**Screenshot nr. 5**
+
+![alt text](http://i.imgur.com/ngXuAjq.png)
+
+**Screenshot nr. 6**
+
+![alt text](http://i.imgur.com/BP8MVFA.png)
+
+**Screenshot nr. 7**
+
+![alt text](http://i.imgur.com/1dl1GtL.png)
+
+
+
 
