@@ -30,7 +30,7 @@
 
 "/owners" - get all the owners <br />
 HTTP method: GET <br />
-Status codes: 200 - ok, 400 - bad request
+Status codes: 200 - ok, 400 - bad request, 404 - not found
 
 "/owners" - insert new owner <br />
 HTTP method: POST <br />
@@ -52,7 +52,7 @@ Status codes: 200 - ok, 400 - bad request, 405 - not allowed
 #### Plates
 "/plates" - get all the plates <br />
 HTTP method: GET <br />
-Status codes: 200 - ok, 400 - bad request
+Status codes: 200 - ok, 400 - bad request, 404 - not found
 
 "/plates" - insert new plate <br />
 HTTP method: POST <br />
@@ -74,7 +74,7 @@ Status codes: 200 - ok, 400 - bad request, 405 - not allowed
 #### Places
 "/places" - get all the places <br />
 HTTP method: GET <br />
-Status codes: 200 - ok, 400 - bad request
+Status codes: 200 - ok, 400 - bad request, 404 - not found
 
 "/places" - insert new place <br />
 HTTP method: POST <br />
@@ -97,7 +97,7 @@ Status codes: 200 - ok, 400 - bad request, 405 - not allowed
 
 "/cars" - get all the cars <br />
 HTTP method: GET <br />
-Status codes: 200 - ok, 400 - bad request
+Status codes: 200 - ok, 400 - bad request, 404 - not found
 
 "/cars" - insert new car <br />
 HTTP method: POST <br />
