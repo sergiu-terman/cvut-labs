@@ -1,4 +1,4 @@
-#Homework 1
+#Homework 2
 --------------------
 
 Using "net" module I've done the homework
