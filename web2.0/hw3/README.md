@@ -1,4 +1,4 @@
-#Homework 2
+#Homework 3
 -------------
 
 ####View of data model
@@ -9,18 +9,18 @@
 
 ####URI description 
 -----------------
-/owners" - the most importan hierarchichal entity<br />
-/owners/id" - specific owner identified by "id" property<br />
-/owners?name=query" - owners filtering by name property ( could be also other properties )
+"/owners" - the most importan hierarchichal entity<br />
+"/owners/id" - specific owner identified by "id" property<br />
+"/owners?name=query" - owners filtering by name property ( could be also other properties )
 
-/cars" - cars of the owners<br />
-/cars/id" - specific car identified by "id" property
+"/cars" - cars of the owners<br />
+"/cars/id" - specific car identified by "id" property
 
-/plates" - plate of the car<br />
-/plates/id" - specific plate identified by "id" property
+"/plates" - plate of the car<br />
+"/plates/id" - specific plate identified by "id" property
 
-/places" - places of the owners<br />
-/places/id" - specific place identified by "id" property
+"/places" - places of the owners<br />
+"/places/id" - specific place identified by "id" property
 
 <br />
 <br />
