@@ -1,0 +1,12 @@
+Phase:	SimpleExample
+Input:  Token
+Options: control = appelt
+
+Rule: SimpleExample1
+Priority: 100
+(
+  {Token.string =~ "[a-zA-Z0-9._-]*@[a-zA-Z0-9._-]*"}
+)
+:entityString
+-->
+:entityString.Email = {name="email"}
