@@ -5,6 +5,7 @@ Homework 1
 *Write a JAPE grammar that will match every mail in a document and annotate it with an “email” annotation*
 
 **Screenshot** for the result
+
 ![Alt text](http://i.imgur.com/A8Gmsox.png)
 
 [Here](https://github.com/xserjjx/cvut-labs/blob/master/ddw/hw1/task1/GATEEmbedded.java) is the Java code <br />
