@@ -11,10 +11,11 @@ Homework 1
 [Here](https://github.com/xserjjx/cvut-labs/blob/master/ddw/hw1/task1/jape-example.jape) is the **JAPE** code
 
 Tools that I've used
--  Document reset
--  NLP tokeniser
--  Annie sentence splitter
--  JAPE
+- Document reset
+- NLP tokeniser
+- Annie sentence splitter
+- JAPE
+
 -------------------------
 ###Task 2
 *Write a JAPE grammar that will detect named entities in texts. the grammar should match occurrences of one or more nouns or proper nouns strings and create annotation “Mention” for the matched strings.*
