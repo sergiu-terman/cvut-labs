@@ -1,0 +1,17 @@
+Phase: NounPhase
+Input: Lookup Token
+Options: control = brill
+ 
+Rule: OccuredNoun
+(
+  {Token.kind == word, Token.category == NN}
+):token
+-->
+:token.Mention = {rule = "OccuredNoun"}
+
+Rule: OccuredProperNoun
+(
+  {Token.kind == word, Token.category == NNP}
+):token
+-->
+:token.Mention = {rule="OccuredProperNoun"}
