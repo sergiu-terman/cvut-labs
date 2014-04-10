@@ -1,0 +1,25 @@
+# robots.txt for http://www.mvcr.cz/
+
+User-agent: Bimbot/1.0
+Disallow: /clanek/
+Disallow: /statistiky
+Disallow: /obecny-program-solidarita
+Disallow: /neplatne-doklady/
+
+# Forbid everything for boitho.com-robot
+User-agent: boitho.com-robot/1.1
+Disallow: /
+
+# Disallow for cosmos
+User-agent: cosmos/0.9_(robot@xyleme.com)
+Disallow: /clanek
+Disallow: /sluzebni-mista
+Disallow: /odbory-a-soucasti-mvcr
+Disallow: /projekt-seznamte-se-
+
+# Disallow for DiamondBot
+User-agent: DiamondBot
+Disallow: /clanek/sluzby-pro-verejnost-informace-pro-cizince-informace-pro-cizince
+Disallow: /dopravni-informace
+DIsallow: /dopravni-nehody-praha
+
