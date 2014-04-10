@@ -1,5 +1,6 @@
 # robots.txt for http://www.mvcr.cz/
 
+# Disallow for Bimbot
 User-agent: Bimbot/1.0
 Disallow: /clanek/
 Disallow: /statistiky
