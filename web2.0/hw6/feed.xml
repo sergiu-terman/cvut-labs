@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns="http://www.mynamespace.net/2009/Atom/app">
+
+    <title>Example Feed</title>
+    <author>
+        <name>Peter Novak</name>
+    </author>
+    <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
+    <updated>2003-12-13T18:30:02Z</update>
+
+    <entry>
+        <id>35gprsd3qortdar</id>
+        <title>Prague Castle</title>
+        <link href="http://store.it/users/432/albums/635/photos/prague-castle.jpg"/>
+        <updated>2003-12-13T18:30:02Z</updated>
+        <app:format>JPG</app:format>
+        <app:stars>5</app:stars>
+    </entry>
+</feed>
