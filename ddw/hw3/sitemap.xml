@@ -1,0 +1,16 @@
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
+    <sitemap>
+        <loc>http://vitvar.com/sitemap1.xml</loc>
+        <lastmod>2014-02-27T15:26:35+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://vitvar.com/sitemap2.xml</loc>
+        <lastmod>2010-02-15T15:00:56+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://vitvar.com/sitemap3.xml</loc>
+        <lastmod>2010-02-15T15:00:56+00:00</lastmod>
+    </sitemap>
+</sitemapindex>

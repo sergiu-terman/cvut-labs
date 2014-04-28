@@ -1,0 +1,42 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>http://vitvar.com/courses/</loc>
+        <lastmod>2014-02-27T15:26:35+00:00</lastmod>
+        <!-- New courses would be added once per year or half of year -->
+        <changefreq>yearly</changefreq>
+
+        <!-- The list of courser is pretty important info to be crawled -->
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Courser info can be changed more frequently, like once per week -->
+    <url>
+        <loc>http://vitvar.com/courses/soa-governancsoa-governance</loc>
+        <lastmod>2010-07-31T08:23:17+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://vitvar.com/courses/mdw</loc>
+        <lastmod>2010-07-31T08:23:17+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://vitvar.com/courses/w20</loc>
+        <lastmod>2010-07-31T08:23:17+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+
+        <!-- This course is more important -->
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>http://vitvar.com/courses/osb</loc>
+        <lastmod>2010-07-31T08:23:17+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+
+</urlset>

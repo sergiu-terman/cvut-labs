@@ -1,0 +1,23 @@
+# robots.txt for http://vitvar.com/
+
+# Setting sitemap
+Sitemap: http://vitvar.com/sitemap.xml
+
+
+
+# Disallow for Bimbot
+User-agent: Bimbot/1.0
+
+Disallow: /membership
+Disallow: /locations
+Disallow: /membership
+Disallow: /supervision
+
+User-agent: Dooble/0.07
+
+Disallow: /supervision
+Disallow: /locations
+
+User-agent: Mozilla/5.0
+
+Disallow: /
