@@ -1,0 +1,21 @@
+<div class="hcourse">
+	At our university we offer <span class="course">Web 2.0</span> course that has <span class="rating">6</span> credits.
+	<a class="fn url" href="“http://vitvar.com“">Tomáš Vitvar</a> lectures in this course
+	
+	<span class="dtstart">
+		every 
+		<span class="value">Wednesday</span>
+		from
+		<span class="value">14:15</span>
+		 to
+		<span class="value">15:45</span>
+	</span>
+	in
+
+	the 
+	<span class="location">
+		<span class="value">new architecture building</span>
+		in 
+		<span class="value">T9_115</span>
+	</span>.
+</div>
