@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<title>NODE JS - SSE TEST</title>
+
+</head>
+<body>
+
+
+<script>
+// /events sends messages with text/event-stream mimetype.
+var source = new EventSource('/events');
+
+source.addEventListener('message', function(e) {
+    console.log("Message recieved at : " + e.data);
+}, false);
+
+source.addEventListener('open', function(e) {
+    console.log("Connection opened . . .");
+}, false);
+
+source.addEventListener('error', function(e) {
+  console.log("Connection closed");
+}, false);
+</script>
+</body>
+</html>
