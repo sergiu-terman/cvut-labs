@@ -9,7 +9,6 @@ All the data is generated from files of previous tutorial
 - The task is to rotate the data - generate a list of books with an array of costumers (who everybody bought each book).
 - Implement it using mapReduce functions
 
-Source code <br />
 
 <b>Map function</b>
 ```
