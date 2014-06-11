@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<div class="vcard">
+  <div class="n">
+    <span class="fn given-name">Rachel</span>
+    <span class="family-name">Nelson</span>
+  </div>
+  <span class="fn nickname">Rachy</span>
+  <div class="adr">
+    <div class="street-address">667 Main street</div>
+    <span class="locality">Palo Alto</span>,
+    <abbr class="region" title="California">CA</abbr>&nbsp;&nbsp;
+    <span class="postal-code">78457</span>
+    <div class="country-name">USA</div>
+  </div>
+  Works at <a class="url org fn" href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/org.xhtml">LeapNet</a>
+  <a class="url" href="www.rachy.com">Her web page</a>
+  Team member: <a class="url fn" href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member2.xhtml">John Doe</span>
+  Team member: <a class="ulr fn" href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member1.xhtml">Richard Brown</span>
+  <div>
+</div>
+
+<section itemscope itemtype="http://data-vocabulary.org/Person">
+  <span itemprop="name">Rachel Nelson</span>
+  Nickname: <span itemprop="nickname">Rachy</span>
+  Works at: 
+  <span itemprop="title" itemscope>
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/org.xhtml" itemprop="url">LeapNet</a>
+  </span>
+
+  <section itemprop="address" itemscope>
+    Address:
+    <span itemprop="street-address">667 Main street</span>
+    <span itemprop="locality">Palo Alto</span>
+    <span itemprop="region">CA</span>
+    <span itemprop="postal-code">78457</span>
+    <span itemprop="country-name">USA</span>
+  </section>
+  
+  <a href="www.rachy.com" itemprop="url">Home page</a>
+  
+  Team member:
+  <span itemprop="name" itemscope>
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member1.xhtml" itemprop="url">Richard Brown</a>
+  </span>
+  Team member:
+  <span itemprop="name" itemscope>
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member2.xhtml" itemprop="url">John Doe</a>
+  </span>
+</section>
+
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person">
+  Name: <span property="v:name">Rachel Nelson</span>
+  Nickname: <span property="v:nickname">Rachy</span>
+  Homepage: <a href="http://www.example.com" rel="v:url">www.rachy.com</a>
+  Works at:
+  <span property="v:affiliation">
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/org.xhtml" rel="v:url">LeapNet</a>
+  </span>
+
+  <div property="address" typeof="PostalAddress">
+    <span property="v:street">667 Main street</span>
+    <span property="v:locality">Palo Alto</span>
+    <span property="v:region">CA</span>
+    <span property="v:postal-code">96401</span>
+    <span property="v:country">USA</span>
+  </div>
+
+  Team member:
+  <property="v:name">
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member2.xhtml" rel="v:url">John Doe</a>
+  </propert>
+  <property="v:name">
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member3.xhtml" rel="v:url">Rachel Nelson</a>
+  </propert>
+</div>
+
+<html xmlns:og="http://ogp.me/ns#">
+  <head>
+    <title>Rachel Nelson</title>
+    <meta property="og:name" content="Rachel Nelson" />
+    <meta property="og:title" content="LeapNet" />
+    <meta property="og:street-address" content="667 Main street" />
+    <meta property="og:locality" content="Palo Alto" />
+    <meta property="og:region" content="CA" />
+    <meta property="og:postal-code" content="7548" />
+    <meta property="og:country-name" content="USA" />
+    <meta property="og:url" content="www.rachy.com" />
+    <meta property="og:name" content="Richard Brown" />
+    <meta property="og:name" content="John Doe" />
+   </head>
+</html>

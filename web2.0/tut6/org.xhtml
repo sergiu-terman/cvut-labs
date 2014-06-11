@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<div class="vcard">
+  <a class="url fn org" href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/org.xhtml">
+    LeapNet
+  </a>
+  <div class="adr">
+    <div class="street-address">169 University Avenue</div>
+    <span class="locality">Palo Alto</span>,
+    <abbr class="region" title="California">CA</abbr>&nbsp;&nbsp;
+    <span class="postal-code">94301</span>
+    <div class="country-name">USA</div>
+  </div>
+  <div class="tel">
+    +1-650-289-4040
+  </div>
+  <div class="geo">
+    Coordinates
+    <span class="latitude">37.25</span>
+    <span class="longitude">122.8</span>
+  </div>
+  <a class="url" href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member1.xhtml">Member1</a>
+  <a class="url" href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member2.xhtml">Member2</a>
+  <a class="url" href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member3.xhtml">Member3</a>
+</div>
+
+<section itemscope itemtype="http://data-vocabulary.org/Person">
+  <span itemprop="title" itemscope>
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/org.xhtml" itemprop="url">LeapNet</a>
+  </span>
+
+  <section itemprop="address" itemscope>
+    Address:
+    <span itemprop="street-address">169 University Avenue</span>
+    <span itemprop="locality">Palo Alto</span>
+    <span itemprop="region">CA</span>
+    <span itemprop="postal-code">94301</span>
+    <span itemprop="country-name">USA</span>
+  </section>
+
+  <span intemprop="tel">
+    +1-650-289-4040
+  </span>
+
+  <section itemprop="itemreviewed" itemscope>
+    GEO:
+    <span itemprop="latitude">37.25</span>
+    <span itemprop="longitude">122.8</span>
+  </section>
+  
+  Member:
+  <span itemprop="name" itemscope>
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member1.xhtml" itemprop="url">Richard Brown</a>
+  </span>
+  <span itemprop="name" itemscope>
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member2.xhtml" itemprop="url">John Doe</a>
+  </span>
+  Member:
+  <span itemprop="name" itemscope>
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member3.xhtml" itemprop="url">Rachel Nelson</a>
+  </span>
+</section>
+
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person">
+  <span property="v:title">
+    <a rel="v:url" href="">LeapNet</a>
+  </span>
+
+  <div property="v:address">
+    <span property="addressStreet">169 University Avenue</span>
+    <span property="addressLocality">Palo Alto</span>
+    <span property="addressRegion">CA</span>
+    <span property="addressPostalCode">96401</span>
+  </div>
+
+  Phone:
+  <span property="v:tel">
+    +1-650-289-4040
+  </span>
+
+  Coordinate:
+  <div property="v:geo">
+    <span property="v:latitude">37.25</span>
+    <span property="v:longitude">122.8</span>
+  </div>
+
+  Member:
+  <property="v:name">
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member1.xhtml" rel="v:url">Richard Brown</a>
+  </propert>
+  Member:
+  <property="v:name">
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member3.xhtml" rel="v:url">John Doe</a>
+  </propert>
+  Member:
+  <property="v:name">
+    <a href="file:///home/sergiu/My%20stuff/CVUT/Labs/web2.0/tut6/member3.xhtml" rel="v:url">Rachel Nelson</a>
+  </propert>
+</div>
+
+<html xmlns:og="http://ogp.me/ns#">
+  <head>
+    <title>LeapNet</title>
+    <meta property="og:title" content="LeapNet" />
+    <meta property="og:street-address" content="169 University Avenue" />
+    <meta property="og:locality" content="Palo Alto" />
+    <meta property="og:region" content="CA" />
+    <meta property="og:postal-code" content="65434" />
+    <meta property="og:country-name" content="USA" />
+    <meta property="og:latitude" content="37.25" />
+    <meta property="og:longitude" content="122.8" />
+    <meta property="og:phone_number" content="+1-650-289-4040" />
+    <meta property="og:url" content="www.leapnet.com" />
+    <meta property="og:name" content="Richard Brown" />
+    <meta property="og:name" content="John Doe" />
+    <meta property="og:name" content="Rachel Nelson" />
+   </head>
+</html>
