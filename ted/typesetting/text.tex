@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage{hyperref}
+\setlength{\parskip}{\baselineskip}
+
+
+
+\begin{document}
+
+\iffalse
+	\include{title_page}
+\fi
+
+\section*{Problem Description}
+
+In this problem I am simulating the behavior of multiple \emph{Animals} on a grid. The grid itself represents a forest, a plane with no borders in which a few Animals are placed. This grid has no borders, for instance if I reach position 0 of the x axis -1 is the other side of the grid also known as the maximum x position. The same feature of course also counts for the maximum position plus 1 becoming 0. The simulation happens in turns. In each turn all the Animals will be asked to \emph{make a decision}. Every animal has its own decision making steps, even if the animals in group of predators/preys have a similar behaviour.
+
+There will be \emph{4 types} of Animals. Two predator and two prey type. Two types of species will be able to move (one prey and one predator capable of movement). Each Animal also has a life energy pool, a procreation pool, and an age limit. Animals are able to look to their 8-connected neighboring grid positions for other Animals.
+
+\subsection*{Animal definition}
+\begin{enumerate}
+\item
+Fox (Predator)
+	\begin{itemize}
+	\item
+		Can't move
+	\item
+		Can eat the prey around him
+	\item
+		After eating, he remains fed for the next 3 rounds. So he doesn't eat duaring this perioud
+	\item
+		Can procreate in an empty cell around him, only if the animal is fed
+	\end{itemize}
+\item
+Wolf (Predator)
+	\begin{itemize}
+	\item
+		Attacks the a wolf if there are more than 2 wolves around him
+	\item
+		The damage done to wolves is in range from $\frac{1}{4}\cdot lifeLimit$ to $\frac{3}{4}\cdot lifeLimit$
+	\item
+		Can eat the prey around him
+	\item
+		Can procreate in an empty cell around him, only if the animal is fed
+	\item
+		If none af actions above were made, wolf moves randomly in a cell around him
+	\end{itemize}
+\item
+Rabbit (Prey)
+	\begin{itemize}
+	\item
+		Can't move
+	\item
+		If no rabbit around himp he dies of loneliness
+	\item
+		If there is rabbit around he procreates in an empty cell around him
+	\end{itemize}
+\item
+Deer (Prey)
+	\begin{itemize}
+	\item
+		If there are predators around he escapes by moving in a different cell
+	\item
+		He escapes only if the empty cell is safe, meaning that no predators around that cell
+	\item
+		He procreates if a deer is around him
+	\item
+		If none of the actions above were made then he moves randomly in an empty cell around him
+	\end{itemize}
+\end{enumerate}
+
+\section*{Implementation}
+The implementation of the problem was done in Java programming language. I also have used swing and awt gui libraries for clearer visualization. The source code of the application can be found on this link: \url{https://github.com/xserjjx/Prey-Predator}
+
+Classes used:
+\begin{description}
+\item
+\emph{Animal} is the main abstract class. Here all the shared methods between the animals are implemented. Some of them are:
+	\begin{itemize}
+	\item
+	List<Animal> lookAround(); returns all the animal in the 8 cell neighourhood
+	\item
+	boolean matingProcess(); does all the mating process and returns true if was done successfully
+	\item
+	List<Coord> getNeighbourhood(); returns the coordinates of cell around the animal
+	\end{itemize}
+\item
+\emph{Predator} class
+\end{description}
+
+\end{document0}
+
+
