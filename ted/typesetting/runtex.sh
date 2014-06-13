@@ -1,5 +1,3 @@
 #!/usr/bin/zsh
-pdflatex text.tex
-rm text.log
-rm text.aux
+pdflatex --shell-escape text.tex
 evince text.pdf
