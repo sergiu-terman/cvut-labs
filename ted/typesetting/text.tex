@@ -37,9 +37,18 @@
 
 \include{title_page}
 
+\section*{What is a multi agent system}
+A multi-agent system (M.A.S.) is a computerized system composed of multiple interacting intelligent agents within an environment. Multi-agent systems can be used to solve problems that are difficult or impossible for an individual agent or a monolithic system to solve. Intelligence may include some methodic, functional, procedural or algorithmic search, find and processing approach.\cite{cit:wikiInfo}
+\subsection*{Equilibria of two-player general-sum games}
+\[
+r_{1}(\sigma_{1})\left[\left(v^{1}_{I_{1}(\sigma_{1})}-\sum\limits_{I'\in I_{1}(Ext_{1}(\sigma_{1}))}v^{1}_{I'}\right)
+-\left(\sum\limits_{\sigma_{2}\in \sum_{2}}g_{1}(\sigma_{1}, \sigma_{2})\ln(r_{2}(\sigma_{2}))\right)\right]=0
+\]
+\cite{cit:bookFormula}
+
 \section*{Problem Description}
 
-In this problem I am simulating the behavior of multiple \emph{Animals} on a grid. The grid itself represents a forest, a plane with no borders in which a few Animals are placed. This grid has no borders, for instance if I reach position 0 of the x axis -1 is the other side of the grid also known as the maximum x position. The same feature of course also counts for the maximum position plus 1 becoming 0. The simulation happens in turns. In each turn all the Animals will be asked to \emph{make a decision}. Every animal has its own decision making steps, even if the animals in group of predators/preys have a similar behaviour.
+In this problem I am simulating the behavior of multiple \emph{Animals} on a grid\cite{cit:wikiInfo}. The grid itself represents a forest, a plane with no borders in which a few Animals are placed. This grid has no borders, for instance if I reach position 0 of the x axis -1 is the other side of the grid also known as the maximum x position. The same feature of course also counts for the maximum position plus 1 becoming 0. The simulation happens in turns. In each turn all the Animals will be asked to \emph{make a decision}. Every animal has its own decision making steps, even if the animals in group of predators/preys have a similar behaviour.
 
 There will be \emph{4 types} of Animals. Two predator and two prey type. Two types of species will be able to move (one prey and one predator capable of movement). Each Animal also has a life energy pool, a procreation pool, and an age limit. Animals are able to look to their 8-connected neighboring grid positions for other Animals.
 
@@ -244,45 +253,54 @@ Now let's see the result of the program simulation. In Figure \ref{fig:initialSt
 	\end{figure}
 }
 
-{
-	\begin{table}[p]
-	\caption{Procreation of animals}
-
-	\resizebox{8cm}{!} {
-		\begin{tabular}{| c | c | c || c | c |}
-		\hline
-
-		 &\multicolumn{2}{|c||}{Predator} & \multicolumn{2}{c|}{Prey} \\
-		\hline
-		Case & Fox & Wolf & Rabbit & Deer \\
-		\hline
-		1 & 68 & 15 & 57 & 86 \\
-		\hline
-		2 & 90 & 0 & 90 & 54 \\
-		\hline
-		3 & 67 & 17 & 130 & 0 \\
-		\hline
-		4 & 84 & 0 & 131 & 0 \\
-		\hline
-		5 & 70 & 11 & 123 & 0 \\
-		\hline
-		6 & 82 & 0 & 88 & 45 \\
-		\hline
-		7 & 57 & 33 & 140 & 0 \\
-		\hline
-		8 & 80 & 11 & 135 & 0 \\
-		\hline
-		9 & 62 & 20 & 137 & 0 \\
-		\hline
-		10 & 90 & 0 & 70 & 72 \\
-		\hline
-		\end{tabular}
-	}
-	\label{tab:procreationTable}
+{	
+	
+	\begin{table}[p!]
 	\centering
+	\begin{tabular}{| c | c | c || c | c |}
+	\hline
+	&\multicolumn{2}{|c||}{Predator} & \multicolumn{2}{c|}{Prey} \\
+	\hline
+	Case & Fox & Wolf & Rabbit & Deer \\
+	\hline
+	1 & 68 & 15 & 57 & 86 \\
+	\hline
+	2 & 90 & 0 & 90 & 54 \\
+	\hline
+	3 & 67 & 17 & 130 & 0 \\
+	\hline
+	4 & 84 & 0 & 131 & 0 \\
+	\hline
+	5 & 70 & 11 & 123 & 0 \\
+	\hline
+	6 & 82 & 0 & 88 & 45 \\
+	\hline
+	7 & 57 & 33 & 140 & 0 \\
+	\hline
+	8 & 80 & 11 & 135 & 0 \\
+	\hline
+	9 & 62 & 20 & 137 & 0 \\
+	\hline
+	10 & 90 & 0 & 70 & 72 \\
+	\hline
+	\end{tabular}
+	\caption{Procreation of animals}
+	\label{tab:procreationTable}
+	
 	\end{table}
 }
 \newpage
+
+\begin{thebibliography}{9}
+
+\bibitem{cit:wikiInfo}
+\emph{In Wikipedia: The Free Encyclopedia} [online]. Wikimedia Foundation St. Petersburg, Florida, U.S. Last update 18.5.2014. English Version. Available from: \url{http://en.wikipedia.org/wiki/Multi-agent_system}
+
+\bibitem{cit:bookFormula}
+\emph{Algorithmic, Game-Theoretic,
+and Logical Foundations} [book]. Yoav Shoham Stanford University, Kevin Leyton-Brown University of British Columbia. Published 2010. Page 160. 
+
+\end{thebibliography}
 \end{document}
 
 
