@@ -36,11 +36,19 @@
 
 \begin{frame}
 	\frametitle{Penetration Test (pentest)}
-	\fontsize{15}{50}\selectfont
-	\begin{itemize}
-	\item Attacking a computer system to find it’s vulnerabilities
-	\item Many times resumes to gaining access to the system
-	\end{itemize}
+	\begin{overprint}
+		\begin{center}
+		\includegraphics[height=3cm]{./pentest.png}
+		\end{center}
+	\end{overprint}
+
+	\fontsize{15}{10}\selectfont
+	\begin{alertblock}{}
+		\begin{itemize} \itemsep4ex
+		\item Attacking a computer system to find it’s vulnerabilities
+		\item Many times resumes to gaining access to the system
+		\end{itemize}
+	\end{alertblock}
 \end{frame}
 
 \begin{frame}
@@ -70,8 +78,8 @@
 
 \begin{frame}
 	\frametitle{Terminology}
-	\begin{itemize}
-	\item<2-> Exploit \itemsep4ex
+	\begin{itemize} \itemsep4ex 
+	\item<2-> Exploit 
 		\begin{itemize} 
 		\item Taking advantage of a flaw within the attacked target. (i.e. SQL injection, configuration errors.)
 		\end{itemize}
@@ -90,8 +98,84 @@
 	\frametitle{Terminology}
 	\begin{itemize}
 	\item Vulnerability scanners
+		\begin{itemize} \itemsep3ex
+			\item<2-> Automated tools to identify known flaws
+			\item<3-> First of all - fingerprinting target OS, also it’s services
+			\item<4-> Very important in the intelligence gathering step
+			\item<5-> Can provide comprehensive vulnerability reports, thus replacing some missing experience
+			\item<6> e.g. Retina, Nessus, NeXpose, OpenVAS, Vega, etc
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
+\begin{frame}
+	\frametitle{PTES (Penetration Testing Execution Standard)}
+	\begin{itemize} \itemsep3ex
+	\item<2-> Pre-engagement interactions. (...and coffee, probably)
+	\item<3-> Intelligence gathering. (passive \& active)
+	\item<4-> Threat modeling
+	\item<5-> Vulnerability analysis
+	\item<6-> Exploitation
+	\item<7-> Post exploitation
+	\item<8> Reporting
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tools \& utilities}
+	\begin{itemize} \itemsep3ex
+	\item<2-> Operating systems
+		\begin{itemize} \itemsep1ex
+		\item<3-> Kali Linux (formerly BackTrack) - based on Debian
+		\item<3-> Pentoo - based on Gentoo
+		\item<3-> WHAX - based on Slackware
+		\end{itemize}
+	\item<4-> Frameworks
+		\begin{itemize} \itemsep1ex
+		\item<5-> Metasploit
+		\item<5-> w3af
+		\end{itemize}
+	\item<6-> Tools
+		\begin{itemize} \itemsep1ex
+		\item<7-> nmap, netcat, John the Ripper
+		\item<7-> tcpdump, Wireshark, upx, etc
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A few words on Metasploit}
+	\begin{itemize} \itemsep2ex
+	\item<2-> Written entirely in Ruby
+	\item<3-> Cross-platform
+	\item<4-> As of today, it contains about 1400 different exploits for Windows, Linux, OS X, iOS \& Android, etc
+	\item<5-> Uses the modular approach, which makes possible combining different exploits with different payloads
+	\item<6-> Highly extensible \& reusable
+	\item<7-> Has several useful interfaces (cli, console, armitage)
+	\item<8> Free of charge, but commercial versions are also available
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{References}
+	\begin{itemize} \itemsep3ex
+	\item Kennedy D., O’Gorman J., Kearns D., Aharoni M. - Metasploit. The Penetration Tester’s Guide. (2011)
+	\item Offensive Security - Metasploit Unleashed \url{http://www.offensive-security.com/metasploit-unleashed}
+	\item Penetration Testing Execution Standard \url{http://www.pentest-standard.org/}
+	\item Nmap \url{http://nmap.org/}
+	\item Metasploit \url{http://www.metasploit.com/}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+	\Huge Thanks for watching
+	\begin{exampleblock}{}
+		\begin{center}
+		{\fontsize{18}{2}\selectfont ``Try Harder''} {\fontsize{11}{2}\selectfont \emph{Offensive Security}}
+		\end{center}
+	\end{exampleblock}
+\end{center}
+\end{frame}
 
 \end{document}
