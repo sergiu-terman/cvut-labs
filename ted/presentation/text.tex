@@ -4,17 +4,94 @@
 
 \useoutertheme{infolines}
 \usecolortheme{beaver}
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{enumerate items}[default]
+
+\newcommand\ListFont{\fontsize{15}{30}\selectfont}
 
 \title[Penetration Testing] % (optional, only for long titles)
 {Penetration Testing}
 \subtitle{A brief introduction to Penetration Testing}
-\author[Author, Anders] % (optional, for multiple authors)
+\author[Sergiu Terman] % (optional, for multiple authors)
 {Sergiu Terman}
 \institute[FIT CVUT] % (optional)
 {CVUT}
 \subject{Computer Science}
 
 \begin{document}
-
 \frame{\titlepage}
+
+\section{Introduction}
+
+\begin{frame}
+	\frametitle{Things we'll cover today}
+	\ListFont
+	\begin{itemize}
+		\item<2-> What is a pentest
+		\item<3-> Terminology
+		\item<4->Penetration Test Execution Standards
+		\item<5> Tools \& utilities
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Penetration Test (pentest)}
+	\fontsize{15}{50}\selectfont
+	\begin{itemize}
+	\item Attacking a computer system to find it’s vulnerabilities
+	\item Many times resumes to gaining access to the system
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why need for a pentest?}
+	\fontsize{12}{15}\selectfont
+	\begin{itemize} \itemsep4ex
+	\item<2-> It’s one of the most effective ways to identify weaknesses
+	\item<3-> A pentester has to think like a real world (black hat) cracker, so a pentest could reflect the \alert<4->{real life behaviour of an assault}
+	\item<5> He has to discover means in which a cracker might compromise the security and deliver damage to the organization
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Types of pentests}
+	\begin{itemize} \itemsep8ex
+	\item<2-> Overt pentest: (also called white box)
+		\begin{itemize}
+		\item<3-> The pentester has insider knowledge: the system, it’s infrastructure, etc. (used when time is limited.)
+		\end{itemize}
+
+	\item<4-> Covert pentest (also called black box)
+		\begin{itemize}
+		\item<5-> The pentester has basic or no information whatsoever, except the company name
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Terminology}
+	\begin{itemize}
+	\item<2-> Exploit \itemsep4ex
+		\begin{itemize} 
+		\item Taking advantage of a flaw within the attacked target. (i.e. SQL injection, configuration errors.)
+		\end{itemize}
+	\item<3-> Payload
+		\begin{itemize} 
+		\item Code to be executed on the attacked target. (i.e. and usually a reverse shell or bind shell.)
+		\end{itemize}
+	\item<4-> Shellcode
+		\begin{itemize} 
+		\item A piece of code to be run after exploitation, typically written in machine code, usually spawns a shell (hence the name)
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Terminology}
+	\begin{itemize}
+	\item Vulnerability scanners
+	\end{itemize}
+\end{frame}
+
+
 \end{document}
